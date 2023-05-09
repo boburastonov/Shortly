@@ -1,3 +1,10 @@
+:root{
+  --accent-color: #ffffff;
+  --text-color: #9e9aa8;
+  --btn-color: #2BD0D0;
+--link-color: #34313D;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -18,12 +25,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Arial', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 15px;
   line-height: auto;
   letter-spacing: 0px;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 img {
@@ -48,9 +55,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,6 +66,94 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* Header */
+.site-header{
+  margin-top: 48px;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-logo {
+  margin-right: 46px;
+}
+
+.site-header-logo:hover{
+  opacity: 0.8;
+}
+
+.site-header-logo:active{
+  opacity: 0.6;
+}
+
+.site-header-logo-img{
+  width: 120px;
+  height: 33px;
+  display: block;
+}
+
+.navbar{
+  margin: 0;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navbar-link {
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navbar-link:hover{
+  opacity: 0.8;
+}
+
+.navbar-link:active{
+  color: var(--link-color);
+}
+.register-buttons {
+  margin-left: auto;
+}
+
+.btn {
+  padding: 9px 23px;
+  text-transform: capitalize;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.btn:active{
+  opacity: 0.6;
+}
+
+.login-btn {
+  background-color: transparent;
+  margin-right: 37px;
+}
+
+.signup-btn {
+  background-color: var(--btn-color);
+  color: var(--accent-color);
 }
 
 @media
