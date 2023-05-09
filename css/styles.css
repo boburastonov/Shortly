@@ -27,7 +27,7 @@ body {
   font-family: 'Poppins', 'Arial', sans-serif;
   font-weight: bold;
   font-size: 15px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: 0px;
   background-color: var(--accent-color);
   color: var(--text-color);
@@ -71,6 +71,7 @@ img {
 /* Header */
 .site-header{
   margin-top: 48px;
+  margin-bottom: 140px;
 }
 
 .site-header-container {
@@ -135,7 +136,8 @@ img {
   border-radius: 28px;
   border: 1px solid transparent;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--accent-color);
+  background-color: var(--btn-color);
 }
 
 .btn:hover{
@@ -149,11 +151,52 @@ img {
 .login-btn {
   background-color: transparent;
   margin-right: 37px;
+  color: var(--text-color);
 }
 
 .signup-btn {
-  background-color: var(--btn-color);
   color: var(--accent-color);
+}
+
+/* Hero */
+.hero{
+  display: flex;
+  margin-top: 0;
+  position: relative;
+}
+
+.hero__info {
+  width: 565px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--link-color);
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0`````````````````  ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````.15px;
+  font-weight: medium;
+}
+
+.hero__btn {
+  padding: 13px 40px;
+  margin-top: 0;
+}
+
+.hero-img{
+  height: 482px;
+  position: absolute;
+  top: -60px;
+  right: -128px;
 }
 
 @media
